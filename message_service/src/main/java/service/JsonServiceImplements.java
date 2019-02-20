@@ -36,7 +36,7 @@ public class JsonServiceImplements implements JsonService {
                         String.format("Failed to generate object from xml string: %s", json)
                 );
             }
-            return (T) result;
+            return (T)result;
         } catch (JAXBException | IOException | ClassCastException e) {
             throw new RuntimeException(
                     String.format("An error occurred while trying to restore an object from an xml string: %s", json)

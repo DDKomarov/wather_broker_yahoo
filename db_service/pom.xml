@@ -14,10 +14,49 @@
 
     <dependencies>
         <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>TestProject</groupId>
+        <artifactId>message_service</artifactId>
+        <scope>compile</scope>
+    </dependency>
+
+    <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>5.2.12.Final</version>
         <scope>provided</scope>
-        </dependency>
+    </dependency>
+
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${lang3.version}</version>
+    </dependency>
     </dependencies>
 </project>

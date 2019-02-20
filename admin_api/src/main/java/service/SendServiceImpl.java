@@ -2,14 +2,14 @@ package service;
 
 import model.City;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.jms.*;
 
 public class SendServiceImpl implements SendService {
-    private final Logger log = Logger.getLogger(SendServiceImpl.class);
+    private final Logger log = LoggerFactory.getLogger(SendServiceImpl.class);
     private static final String WEATHER_TOPIC = "java:jboss/weatherTopic";
     private static final String CONNECTION = "java:comp/DefaultJMSConnectionFactory";
 

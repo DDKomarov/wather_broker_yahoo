@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/admin_api" />
     <file type="web" url="file://$PROJECT_DIR$/db_service" />
+    <file type="web" url="file://$PROJECT_DIR$/weather_service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
