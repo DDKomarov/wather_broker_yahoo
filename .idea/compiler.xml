@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin_api" />
         <module name="db_service" />
+        <module name="message_service" />
         <module name="weather_service" />
         <module name="yahoo_weather" />
       </profile>

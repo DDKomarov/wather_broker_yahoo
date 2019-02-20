@@ -12,8 +12,10 @@
 </head>
 <body>
 <div align="center">
-    <input>
-    <button id="submit" name="submit">submit</button>
+    <form action="city" method="GET" modelAttribute="city">
+        <input type="text"  name="city">
+        <input type="submit"/>
+    </form>
 </div>
 </body>
 </html>

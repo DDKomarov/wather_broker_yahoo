@@ -16,6 +16,7 @@
         <module>db_service</module>
         <module>yahoo_weather</module>
         <module>weather_service</module>
+        <module>message_service</module>
     </modules>
     <build>
         <pluginManagement>
@@ -36,14 +37,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-all</artifactId>
-                <version>LATEST</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
