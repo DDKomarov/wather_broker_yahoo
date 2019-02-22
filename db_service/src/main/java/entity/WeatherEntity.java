@@ -1,15 +1,7 @@
 package entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Version;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
@@ -19,15 +11,14 @@ import java.util.Objects;
  * Прогноз погоды
  */
 @Entity
-@Table(name = "weather")
-public class Weather {
+//@Table(name = "weather")
+public class WeatherEntity {
 
     /**
      * Идентификатор проноза
      */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-//    @Column(name = "id")
     private Long id;
 
     /**
@@ -41,14 +32,12 @@ public class Weather {
      */
     @NotNull
     @Temporal(value = TemporalType.DATE)
-//    @Column(name = "weather_date")
     private Date date;
 
     /**
      * Название города
      */
     @NotNull
-//    @Column(name = "read_city")
     private String city;
 
     /**
@@ -56,7 +45,6 @@ public class Weather {
      */
     @NotNull
     @Max(3)
-//    @Column(name = "weather_day", length = 3)
     private String day;
 
     /**
@@ -64,7 +52,6 @@ public class Weather {
      */
     @NotNull
     @Max(3)
-//    @Column(name = "high_temp", length = 3)
     private String highTemp;
 
     /**
@@ -72,18 +59,16 @@ public class Weather {
      */
     @NotNull
     @Max(3)
-//    @Column(name = "low_temp ", length = 3)
     private String lowTemp;
 
     /**
      * Описание погоды
      */
     @NotNull
-//    @Column(name = "description")
     private String description;
 
-    public Weather(@NotNull Date date, @NotNull String city, @NotNull String day, @NotNull String highTemp,
-                   @NotNull String lowTemp, @NotNull String description) {
+    public WeatherEntity(@NotNull Date date, @NotNull String city, @NotNull String day, @NotNull String highTemp,
+                         @NotNull String lowTemp, @NotNull String description) {
         this.date = date;
         this.city = city;
         this.day = day;
@@ -92,7 +77,7 @@ public class Weather {
         this.description = description;
     }
 
-    public Weather() {
+    public WeatherEntity() {
     }
 
     public Long getId() {
@@ -149,7 +134,7 @@ public class Weather {
 
     @Override
     public String toString() {
-        return "Weather[" +
+        return "WeatherEntity[" +
                 "id=" + id +
                 ", version=" + version +
                 ", date=" + date +
@@ -165,7 +150,7 @@ public class Weather {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Weather entity = (Weather) o;
+        WeatherEntity entity = (WeatherEntity) o;
         return Objects.equals(date, entity.date) &&
                 Objects.equals(city, entity.city) &&
                 Objects.equals(day, entity.day) &&

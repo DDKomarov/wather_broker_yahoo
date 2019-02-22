@@ -1,5 +1,8 @@
 package service;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import model.JsonModel;
 
 import javax.enterprise.context.RequestScoped;
@@ -14,6 +17,7 @@ public class JsonServiceImplements implements JsonService {
     @Override
     public String createJsonMessage(JsonModel jm) {
         try (OutputStream os = new ByteArrayOutputStream()) {
+//            JsonNode node = new
             JAXBContext context = JAXBContext.newInstance(jm.getClass());
             Marshaller marshaller = context.createMarshaller();
             marshaller.marshal(jm, os);
@@ -24,7 +28,7 @@ public class JsonServiceImplements implements JsonService {
     }
 
     @Override
-    public <T extends JsonModel> T readXmlMessage(String json, Class<T> modelClass) {
+    public <T extends JsonModel> T readJsonMessage(String json, Class<T> modelClass) {
 
         byte[] array = json.getBytes();
         try (InputStream inputStream = new ByteArrayInputStream(array)) {

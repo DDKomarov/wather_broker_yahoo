@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 import java.util.Objects;
 
 @JsonRootName("Weather")
-public class Weather implements JsonModel{
+public class Weather implements JsonModel {
     @JsonProperty("date")
     private String date;
 

@@ -10,11 +10,11 @@ import javax.jms.*;
 
 public class SendServiceImpl implements SendService {
     private final Logger log = LoggerFactory.getLogger(SendServiceImpl.class);
-    private static final String WEATHER_TOPIC = "java:jboss/weatherTopic";
+    private static final String WEATHER_QUEUE = "java:jboss/weatherTopic";
     private static final String CONNECTION = "java:comp/DefaultJMSConnectionFactory";
 
-    @Resource(name = WEATHER_TOPIC)
-    private Topic topic;
+    @Resource(name = WEATHER_QUEUE)
+    private Queue queue;
 
     @Resource(name = CONNECTION)
     private ConnectionFactory connection;
@@ -41,7 +41,7 @@ public class SendServiceImpl implements SendService {
         String message = jsonService.createJsonMessage(writeCity);
         try (JMSContext context = (JMSContext) connection.createConnection()) {
             JMSProducer producer = context.createProducer();
-            producer.send(topic, message);
+            producer.send(queue, message);
         } catch (JMSException e) {
             throw new RuntimeException("Not connection" , e );
         }

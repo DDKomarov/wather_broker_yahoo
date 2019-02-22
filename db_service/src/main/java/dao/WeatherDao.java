@@ -1,11 +1,11 @@
 package dao;
 
-import entity.Weather;
+import entity.WeatherEntity;
 
 import java.util.Date;
 
 public interface WeatherDao {
-    void save(Weather entity);
+    void save(WeatherEntity entity);
 
     boolean isForecastDuplicate(Date date, String city);
 }

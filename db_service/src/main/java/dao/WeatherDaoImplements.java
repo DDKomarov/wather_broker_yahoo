@@ -1,6 +1,6 @@
 package dao;
 
-import entity.Weather;
+import entity.WeatherEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,7 @@ public class WeatherDaoImplements implements WeatherDao {
      * {@inheritDoc}
      */
     @Override
-    public void save(Weather entity) {
+    public void save(WeatherEntity entity) {
         em.persist(entity);
     }
 
@@ -31,7 +31,7 @@ public class WeatherDaoImplements implements WeatherDao {
     @Override
     public boolean isForecastDuplicate(Date date, String city) {
         Query query = em.createQuery(
-                "select count (*) from Weather w where w.date =:date  and w.city =:city"
+                "select count (*) from WeatherEntity w where w.date =:date  and w.city =:city"
         );
         query.setParameter("date", date);
         query.setParameter("city", city);

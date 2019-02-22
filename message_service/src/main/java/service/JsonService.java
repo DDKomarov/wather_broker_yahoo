@@ -6,5 +6,5 @@ public interface JsonService {
 
     String createJsonMessage(JsonModel jm);
 
-    <T extends JsonModel> T readXmlMessage(String json, Class<T> modelClass);
+    <T extends JsonModel> T readJsonMessage(String json, Class<T> modelClass);
 }
