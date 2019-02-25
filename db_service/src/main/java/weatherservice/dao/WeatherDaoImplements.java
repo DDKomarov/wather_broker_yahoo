@@ -1,4 +1,4 @@
-package dao;
+package weatherservice.dao;
 
 import entity.WeatherEntity;
 import org.slf4j.Logger;

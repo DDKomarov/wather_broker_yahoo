@@ -1,6 +1,6 @@
-package service;
+package weatherservice.service;
 
-import dao.WeatherDao;
+import weatherservice.dao.WeatherDao;
 import entity.WeatherEntity;
 import model.Weather;
 import org.apache.commons.lang3.StringUtils;
@@ -29,7 +29,7 @@ public class DataServiceImplements implements DataService {
             throw new RuntimeException("message is null");
         }
         Weather weather = convert.transformJsonMessageToModel(json);
-        log.debug("Transformed object from xml: {}", weather);
+        log.debug("Transformed object from json: {}", weather);
         SimpleDateFormat format = new SimpleDateFormat(DATE_PATTERN, Locale.US);
         try {
             Date date = format.parse(weather.getDate());

@@ -25,7 +25,7 @@ public class City implements JsonModel {
 
     @Override
     public String toString() {
-        return "{" + name + "}";
+        return "name: " + name;
     }
 
     @Override

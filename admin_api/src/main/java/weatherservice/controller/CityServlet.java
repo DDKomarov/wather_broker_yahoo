@@ -1,7 +1,7 @@
-package controller;
+package weatherservice.controller;
 
 import org.apache.commons.lang3.StringUtils;
-import service.SendService;
+import weatherservice.service.SendService;
 
 
 import javax.servlet.ServletException;

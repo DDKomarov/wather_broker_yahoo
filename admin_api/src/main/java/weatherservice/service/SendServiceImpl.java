@@ -1,4 +1,4 @@
-package service;
+package weatherservice.service;
 
 import model.City;
 import org.apache.commons.lang3.StringUtils;

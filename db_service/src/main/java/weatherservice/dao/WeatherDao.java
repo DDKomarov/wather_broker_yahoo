@@ -1,4 +1,4 @@
-package dao;
+package weatherservice.dao;
 
 import entity.WeatherEntity;
 

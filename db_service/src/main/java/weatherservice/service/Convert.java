@@ -1,4 +1,4 @@
-package service;
+package weatherservice.service;
 
 import entity.WeatherEntity;
 import model.Weather;
@@ -50,7 +50,7 @@ public class Convert {
         try {
             return format.parse(date);
         } catch (ParseException e) {
-            throw new RuntimeException("Internal service error", e);
+            throw new RuntimeException("Internal weatherservice.service error", e);
         }
     }
 }

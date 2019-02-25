@@ -7,6 +7,7 @@ import java.util.Objects;
 
 @JsonRootName("Weather")
 public class Weather implements JsonModel {
+
     @JsonProperty("date")
     private String date;
 
