@@ -5,12 +5,15 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.annotation.Resource;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.jms.*;
 
-public class SendServiceImpl implements SendService {
-    private final Logger log = LoggerFactory.getLogger(SendServiceImpl.class);
-    private static final String WEATHER_QUEUE = "java:jboss/weatherTopic";
+@RequestScoped
+public class SendServiceImplements implements SendService {
+    private final Logger log = LoggerFactory.getLogger(SendServiceImplements.class);
+    private static final String WEATHER_QUEUE = "java:jboss/weatherTopic ";
+//    private static final String WEATHER_QUEUE = "http://localhost:8080/admin_api-1.0-SNAPSHOT/";
     private static final String CONNECTION = "java:comp/DefaultJMSConnectionFactory";
 
     @Resource(name = WEATHER_QUEUE)
@@ -22,11 +25,11 @@ public class SendServiceImpl implements SendService {
     private JsonService jsonService;
 
     @Inject
-    public SendServiceImpl(JsonService jsonService) {
+    public SendServiceImplements(JsonService jsonService) {
         this.jsonService = jsonService;
     }
 
-    public SendServiceImpl() {
+    public SendServiceImplements() {
     }
 
     /**

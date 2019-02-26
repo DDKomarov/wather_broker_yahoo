@@ -35,7 +35,7 @@ public class WeatherFilter {
 
     @Override
     public String toString() {
-        return "ForecastFilter{" +
+        return "WeatherFilter: {" +
                 "date=" + date +
                 ", city='" + city + '\'' +
                 '}';

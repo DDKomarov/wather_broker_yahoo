@@ -8,6 +8,7 @@ import java.io.*;
 
 @RequestScoped
 public class JsonServiceImplements implements JsonService {
+
     @Override
     public String createJsonMessage(JsonModel jm) {
         try (OutputStream os = new ByteArrayOutputStream()) {

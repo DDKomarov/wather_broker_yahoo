@@ -4,8 +4,10 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="Entities" value="2e65de68-8b04-4c50-9777-00bf00180ea2" />
+          <factory-entry name="manager" value="2e65de68-8b04-4c50-9777-00bf00180ea2" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/persistence.xml" />

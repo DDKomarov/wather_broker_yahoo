@@ -15,8 +15,12 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/city")
 public class CityServlet extends HttpServlet {
 
-    @Inject
     private SendService sendService;
+
+    @Inject
+    public CityServlet(SendService sendService) {
+        this.sendService = sendService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -8,10 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
-    <title align="center"> Forecast</title>
+    <title align="center">Weather Forecast</title>
+    <style>
+        h1{
+            font-size: 32px;
+        }
+    </style>
 </head>
 <body>
-<h1 align="center">Forecast</h1>
+<h1 align="center">Weather Forecast</h1>
 <h3 align="center">Date</h3>
 <div align="center"><c:out value="${weatherView.date}"/></div>
 <h3 align="center">City</h3>

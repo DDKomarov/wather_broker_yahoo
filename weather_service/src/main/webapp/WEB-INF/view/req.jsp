@@ -17,7 +17,7 @@
             <spring:form action="forecast/submit" method="post" modelAttribute="filter">
                 <div class="form-group">
                     <label>Date</label>
-                    <spring:input type= "date" path="date"/>
+                    <spring:input type="date" path="date"/>
                 </div>
                 <div class="form-group">
                     <label>City</label>
