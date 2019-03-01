@@ -1,0 +1,7 @@
+database\weatherservice\service\DataServiceImplements.class
+database\weatherservice\service\DataReceiver.class
+database\weatherservice\service\DataService.class
+database\entity\WeatherEntity.class
+database\weatherservice\service\Convert.class
+database\weatherservice\dao\WeatherDao.class
+database\weatherservice\dao\WeatherDaoImplements.class

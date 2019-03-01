@@ -1,0 +1,5 @@
+database\weatherservice\service\JsonServiceImplements.class
+database\weatherservice\model\City.class
+database\weatherservice\model\JsonModel.class
+database\weatherservice\service\JsonService.class
+database\weatherservice\model\Weather.class

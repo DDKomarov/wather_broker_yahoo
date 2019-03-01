@@ -1,0 +1,10 @@
+database\weatherservice\service\WeatherForecastService.class
+database\weatherservice\view\YahooLocation.class
+database\weatherservice\view\YahooResult.class
+database\weatherservice\service\YahooReceiver.class
+database\weatherservice\view\YahooChannel.class
+database\weatherservice\view\YahooWeatherResponse.class
+database\weatherservice\view\YahooWeather.class
+database\weatherservice\service\WeatherForecastServiceImplements.class
+database\weatherservice\view\Query.class
+database\weatherservice\view\YahooItem.class
