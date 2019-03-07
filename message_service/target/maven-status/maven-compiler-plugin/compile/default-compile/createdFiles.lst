@@ -1,5 +1,5 @@
-database\weatherservice\service\JsonServiceImplements.class
-database\weatherservice\model\City.class
-database\weatherservice\model\JsonModel.class
-database\weatherservice\service\JsonService.class
-database\weatherservice\model\Weather.class
+message_service\service\JsonService.class
+message_service\model\JsonModel.class
+message_service\model\City.class
+message_service\model\Weather.class
+message_service\service\JsonServiceImplements.class

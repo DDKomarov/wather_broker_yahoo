@@ -1,5 +1,5 @@
-D:\dev\weatherbroker\message_service\src\main\java\database\weatherservice\model\Weather.java
-D:\dev\weatherbroker\message_service\src\main\java\database\weatherservice\model\City.java
-D:\dev\weatherbroker\message_service\src\main\java\database\weatherservice\service\JsonService.java
-D:\dev\weatherbroker\message_service\src\main\java\database\weatherservice\model\JsonModel.java
-D:\dev\weatherbroker\message_service\src\main\java\database\weatherservice\service\JsonServiceImplements.java
+D:\dev\weatherbroker\message_service\src\main\java\message_service\model\JsonModel.java
+D:\dev\weatherbroker\message_service\src\main\java\message_service\model\Weather.java
+D:\dev\weatherbroker\message_service\src\main\java\message_service\service\JsonService.java
+D:\dev\weatherbroker\message_service\src\main\java\message_service\model\City.java
+D:\dev\weatherbroker\message_service\src\main\java\message_service\service\JsonServiceImplements.java

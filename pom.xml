@@ -26,8 +26,8 @@
         <servlet-api.version>3.1.0</servlet-api.version>
         <jboss-jms-api.version>1.0.2.Final</jboss-jms-api.version>
         <javax.inject.version>1</javax.inject.version>
-        <message-database.weatherservice.service.version>1.0-SNAPSHOT</message-database.weatherservice.service.version>
-        <weather-broker.version>1.0-SNAPSHOT</weather-broker.version>
+        <!--<message-database.weatherservice.service.version>1.0-SNAPSHOT</message-database.weatherservice.service.version>-->
+        <!--<weather-broker.version>1.0-SNAPSHOT</weather-broker.version>-->
         <spring.version>5.0.0.RELEASE</spring.version>
         <spring-data-jpa.version>2.0.5.RELEASE</spring-data-jpa.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
@@ -125,6 +125,11 @@
                 <artifactId>Database</artifactId>
                 <version>${weather-broker.version}</version>
                 <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.15</version>
             </dependency>
 
             <dependency>
