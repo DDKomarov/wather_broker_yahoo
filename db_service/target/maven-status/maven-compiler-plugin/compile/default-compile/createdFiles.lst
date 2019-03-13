@@ -1,7 +1,0 @@
-db\service\Convert.class
-db\service\DataServiceImplements.class
-db\service\DataReceiver.class
-db\service\DataService.class
-db\dao\WeatherDao.class
-db\entity\WeatherEntity.class
-db\dao\WeatherDaoImplements.class

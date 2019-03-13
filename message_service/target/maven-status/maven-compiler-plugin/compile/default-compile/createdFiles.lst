@@ -1,5 +1,0 @@
-message_service\service\JsonService.class
-message_service\model\JsonModel.class
-message_service\model\City.class
-message_service\model\Weather.class
-message_service\service\JsonServiceImplements.class
