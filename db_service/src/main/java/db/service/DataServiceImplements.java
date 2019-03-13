@@ -34,7 +34,9 @@ public class DataServiceImplements implements DataService {
             throw new RuntimeException("message is null");
         }
         Weather weather = convert.transformJsonMessageToModel(json);
+
         log.debug("Transformed object from json: {}", weather);
+
         SimpleDateFormat format = new SimpleDateFormat(DATE_PATTERN, Locale.US);
         try {
             Date date = format.parse(weather.getDate());

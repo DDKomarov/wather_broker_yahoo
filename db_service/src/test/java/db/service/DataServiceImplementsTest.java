@@ -19,12 +19,9 @@ import static org.easymock.EasyMock.*;
 import static org.easymock.EasyMock.verify;
 
 public class DataServiceImplementsTest {
-    private Weather weatherForecast = new Weather("21 May 2018", "Penza", "Mon", "74",
-            "54",
-            "Scattered Thunderstorms");
-    private Weather weatherForecastWithWrongDate = new Weather("thisisjust", "Penza", "Mon",
-            "74", "54",
-            "Scattered Thunderstorms");
+    private Weather weatherForecast = new Weather("13 March 2019", "Saratov", "Wed", "35",
+            "27",
+            "Partly cloudy");
     private SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy", Locale.US);
     private Date date = format.parse(weatherForecast.getDate());
     private String city = "Saratov";
@@ -58,8 +55,6 @@ public class DataServiceImplementsTest {
     /**
      * Проверяем вызов методов: JsonServiceImplements.readJsonMessage(String json, Class<T> modelClass),
      * ForecastDaoImpl.isForecastDuplicate(Date date, String city)
-     *
-     *                                       строки
      */
     @Test
     public void testSave() throws RuntimeException {
@@ -71,4 +66,65 @@ public class DataServiceImplementsTest {
         verify(service);
         verify(dao);
     }
+
+
+    /**
+     * Проверяем, сгенерируется ли исключение при получении методом строки равной null
+     * */
+    @Test
+    public void testSaveNullJson() throws RuntimeException{
+        dataService.save(nullJson);
+    }
+
+    /**
+     * Проверяем сгенерируется ли исключение при получении методом пустой строки
+     */
+    @Test
+    public void testSaveEmptyJson() throws RuntimeException{
+        dataService.save(emptyJson);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

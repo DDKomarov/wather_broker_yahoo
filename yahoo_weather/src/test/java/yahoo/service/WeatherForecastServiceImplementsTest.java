@@ -34,7 +34,11 @@ public class WeatherForecastServiceImplementsTest {
             "description: Mostly Cloudy" +
             "}" +
             "}";
-    private String json = "{City: {_name: Saratov }}";
+    private String json = "{" +
+            "City: " +
+            "{_name: Saratov " +
+            "}" +
+            "}";
     private String cityName = "Saratov";
     private String nullCityName = null;
     private String emptyCityName = "";
@@ -49,19 +53,21 @@ public class WeatherForecastServiceImplementsTest {
             "description: Mostly Cloudy" +
             "}" +
             "}";
-    private Weather forecast = new Weather("18 May 2018", "Saratov", "Fri", "78",
-            "57", "Scattered Thunderstorms");
+    private Weather forecast = new Weather("13 March 2019", "Saratov", "Wed", "35",
+            "27",
+            "Partly cloudy");
+
     private String url = "https://query.yahooapis.com/v1/public/yql?q=select%20location%2C%20item." +
             "forecast%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo." +
             "places(1)%20where%20text%3D%22" + cityName + "%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables." +
             "org%2Falltableswithkeys";
-    private YahooWeather yahooWeather = new YahooWeather("47", "18 May 2018", "Fri", "78",
+    private YahooWeather yahooWeather = new YahooWeather("18 May 2018", "Fri", "78",
             "57", "Scattered Thunderstorms");
     private YahooItem item = new YahooItem(yahooWeather);
     private YahooLocation location = new YahooLocation("Saratov", "Russia", " Saratov Oblast");
     private YahooChannel[] channel = {new YahooChannel(location, item)};
     private YahooResult result = new YahooResult(channel);
-    private Query query = new Query(10, "2018-05-18T07:06:57Z", "ru-RU", result);
+    private Query query = new Query(10, "2019-03-11T14:22:57Z", "ru-RU", result);
     private YahooWeatherResponse response = new YahooWeatherResponse(query);
 
     @Rule
@@ -118,23 +124,22 @@ public class WeatherForecastServiceImplementsTest {
         verify(connectionFactory);
     }
 
-//    /**
-//     * Проверяем, сгенерируется ли исключение при получении методом строки равной null
-//     *
-//     */
-//    @Test(expected = WeatherBrokerServiceException.class)
-//    public void testCreateAndSendMessageWithNullCityName() throws WeatherBrokerServiceException {
-//        forecastService.createAndSendMessage(nullCityName);
-//    }
-//
-//    /**
-//     * Проверяем, сгенерируется ли исключение при получении методом пустой строки
-//     *
-//     * @throws WeatherBrokerServiceException Исключение, сгенерированная при получении меодом пустой или равной null
-//     *                                       строки
-//     */
-//    @Test(expected = WeatherBrokerServiceException.class)
-//    public void testCreateAndSendMessageWithEmptyCityName() throws WeatherBrokerServiceException {
-//        forecastService.createAndSendMessage(emptyCityName);
-//    }
+    /**
+     * Проверяем, сгенерируется ли исключение при получении методом строки равной null
+     *
+     */
+    @Test
+    public void testCreateAndSendMessageWithNullCityName() throws RuntimeException {
+        forecastService.createAndSendMessage(nullCityName);
+    }
+
+    /**
+     * Проверяем, сгенерируется ли исключение при получении методом пустой строки
+     *
+     */
+
+    @Test
+    public void testCreateAndSendMessageWithEmptyCityName() throws RuntimeException {
+        forecastService.createAndSendMessage(emptyCityName);
+    }
 }

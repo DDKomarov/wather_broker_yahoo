@@ -49,8 +49,6 @@ public class WeatherController {
      *
      * @param filter Объект, заполненный информацией необходимой для поиска прогноза в базе данных
      * @return Форма для вывода информации о запрашиваемом прогнозе
-//     * @throws WeatherBrokerServiceException Исключение, сгенерированное неправильным воодом информации,
-     *                                       необходимой для запроса к базе данных
      */
     @RequestMapping(value = "/forecast/submit", method = RequestMethod.POST)
     public ModelAndView getForecast(@ModelAttribute("filter") WeatherFilter filter){
@@ -61,7 +59,7 @@ public class WeatherController {
         try {
             weatherView = service.getWeatherByFilter(filter);
         } catch (NoResultException e) {
-            return new ModelAndView("redirect:/api/weatherbroker/error");
+            return new ModelAndView("error");
         }
         view.addObject("weatherView", weatherView);
         return view;

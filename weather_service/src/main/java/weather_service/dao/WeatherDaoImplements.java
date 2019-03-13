@@ -18,9 +18,7 @@ public class WeatherDaoImplements implements WeatherDao {
     @PersistenceContext
     private EntityManager em;
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public WeatherEntity getByCityAndDate(WeatherFilter filter) {
         if (filter.date == null || StringUtils.isBlank(filter.city)) {
@@ -28,13 +26,17 @@ public class WeatherDaoImplements implements WeatherDao {
         }
         Date date = filter.date;
         String city = filter.city;
+
         CriteriaBuilder builder = em.getCriteriaBuilder();
         CriteriaQuery<WeatherEntity> criteriaQuery = builder.createQuery(WeatherEntity.class);
+
         Root<WeatherEntity> root = criteriaQuery.from(WeatherEntity.class);
         criteriaQuery.select(root);
+
         Predicate criteria = builder.conjunction();
         Predicate datePredicate = builder.equal(root.get("date"), date);
         criteria = builder.and(criteria, datePredicate);
+
         Predicate cityPredicate = builder.equal(root.get("city"), city);
         criteria = builder.and(criteria, cityPredicate);
         criteriaQuery.where(criteria);

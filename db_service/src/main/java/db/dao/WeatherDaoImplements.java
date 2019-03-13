@@ -17,17 +17,12 @@ public class WeatherDaoImplements implements WeatherDao {
     @PersistenceContext(unitName = "manager")
     private EntityManager em;
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void save(WeatherEntity entity) {
         em.persist(entity);
     }
 
-    /**
-     * {@inheritDoc}
-     */
+
     @Override
     public boolean isForecastDuplicate(Date date, String city) {
         Query query = em.createQuery(

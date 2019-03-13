@@ -12,11 +12,8 @@ public class JsonServiceImplements implements JsonService {
     @Override
     public String createJsonMessage(JsonModel jm) {
         try (OutputStream os = new ByteArrayOutputStream()) {
-//            JAXBContext context = JAXBContext.newInstance(jm.getClass());
-//            Marshaller marshaller = context.createMarshaller();
-//            marshaller.marshal(jm, os);
             ObjectMapper mapper = new ObjectMapper();
-            mapper.writeValue(os,jm);
+            mapper.writeValue(os, jm);
             return os.toString();
         } catch (IOException e) {
             throw new RuntimeException(
@@ -32,12 +29,6 @@ public class JsonServiceImplements implements JsonService {
         byte[] array = json.getBytes();
         try (InputStream inputStream = new ByteArrayInputStream(array)) {
             ObjectMapper mapper = new ObjectMapper();
-
-//            mapper.readValue(json,modelClass);
-//            JAXBContext jaxbContext = JAXBContext.newInstance(modelClass);
-//            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-//            Object result = unmarshaller.unmarshal(inputStream);
-
             Object result = mapper.readValue(json, modelClass);
             if (result == null || !result.getClass().isAssignableFrom(modelClass)) {
                 throw new RuntimeException(

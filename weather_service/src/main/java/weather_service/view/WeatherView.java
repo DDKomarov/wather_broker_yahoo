@@ -27,49 +27,26 @@ public class WeatherView {
         return date;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public String getCity() {
         return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
     }
 
     public String getDay() {
         return day;
     }
 
-    public void setDay(String day) {
-        this.day = day;
-    }
-
     public String getHighTemp() {
         return highTemp;
-    }
-
-    public void setHighTemp(String highTemp) {
-        this.highTemp = highTemp;
     }
 
     public String getLowTemp() {
         return lowTemp;
     }
 
-    public void setLowTemp(String lowTemp) {
-        this.lowTemp = lowTemp;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     @Override
     public String toString() {

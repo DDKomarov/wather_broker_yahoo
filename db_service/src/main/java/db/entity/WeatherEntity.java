@@ -161,7 +161,6 @@ public class WeatherEntity {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(date, city, day, highTemp, lowTemp, description);
     }
 }

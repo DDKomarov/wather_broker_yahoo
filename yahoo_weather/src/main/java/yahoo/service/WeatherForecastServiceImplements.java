@@ -69,7 +69,6 @@ public class WeatherForecastServiceImplements implements WeatherForecastService 
      *
      * @param city Название города
      * @return Ответ от Yahoo Weather API
-     * //     * @throws WeatherBrokerServiceException Ошибка сгенерированная при попытке запроса с сервесу Yahoo Weather API
      */
     private YahooWeatherResponse getResponseFromYahooWeather(String city) {
         YahooWeatherResponse response;

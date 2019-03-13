@@ -20,15 +20,15 @@ import static org.easymock.EasyMock.*;
 
 public class WeatherServiceImplementsTest{
     private SimpleDateFormat format = new SimpleDateFormat("dd MMM yyyy", Locale.US);
-    private Date date = format.parse("21 May 2018");
-    private String city = "Penza";
+    private Date date = format.parse("13 March 2019");
+    private String city = "Saratov";
     private WeatherFilter nullFilter = null;
-    private WeatherFilter filterWithNullDate = new WeatherFilter(null, city);
     private WeatherFilter filter = new WeatherFilter(date, city);
-    private WeatherEntity entity = new WeatherEntity(date, city, "Mon", "74", "54",
-            "Scattered Thunderstorms");
-    private WeatherView view = new WeatherView(date, city, "Mon", "74", "54",
-            "Scattered Thunderstorms");
+    private WeatherEntity entity = new WeatherEntity(date, city, "Wed", "35", "27",
+            "Partly cloudy");
+
+    private WeatherView view = new WeatherView(date, city, "Wed", "35", "27",
+            "Partly cloudy");
 
     @Rule
     public EasyMockRule em = new EasyMockRule(this);
@@ -56,13 +56,13 @@ public class WeatherServiceImplementsTest{
         verify(dao);
     }
 
-//    /**
-//     * Проверяем сгенерируется ли исключении при полученнии методом WeatherServiceImpl.getForecastByFilter()
-//     * аргумента равного null
-//     *
-//     */
-//    @Test(expected = WeatherBrokerServiceException.class)
-//    public void testGetForecastByNullFilter() throws WeatherBrokerServiceException {
-//        service.getForecastByFilter(nullFilter);
-//    }
+    /**
+     * Проверяем сгенерируется ли исключении при полученнии методом WeatherServiceImplements.getWeatherByFilter()
+     * аргумента равного null
+     *
+     */
+    @Test
+    public void testGetForecastByNullFilter() throws RuntimeException {
+        service.getWeatherByFilter(nullFilter);
+    }
 }

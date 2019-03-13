@@ -25,7 +25,6 @@ public class Convert {
      *
      * @param weather Объект, содержащий информацию о погоде
      * @return Сущность, сопоставленная с таблицей в базе данных
-//     * @throws WeatherBrokerServiceException Ошибка, сгенерированная при попытке преобразования строки с датой в объект
      */
     WeatherEntity transformFromModelToEntity(Weather weather){
         WeatherEntity entity = new WeatherEntity();
@@ -44,7 +43,6 @@ public class Convert {
      *
      * @param date Строка содержащая дату
      * @return Дата
-//     * @throws WeatherBrokerServiceException Ошибка, сгенерированная при попытке преобразования строки с датой в объект
      */
     Date transformFromStringToDate(String date) {
         SimpleDateFormat format = new SimpleDateFormat(DATE_PATTERN, Locale.US);

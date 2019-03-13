@@ -2,15 +2,13 @@ package yahoo.view;
 
 
 public class YahooWeather {
-    private String code;
     private String date;
     private String day;
     private String high;
     private String low;
     private String text;
 
-    public YahooWeather(String code, String date, String day, String high, String low, String text) {
-        this.code = code;
+    public YahooWeather(String date, String day, String high, String low, String text) {
         this.date = date;
         this.day = day;
         this.high = high;
@@ -19,14 +17,6 @@ public class YahooWeather {
     }
 
     public YahooWeather() {
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public String getDate() {

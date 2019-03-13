@@ -77,4 +77,26 @@ public class SendServiceImplementsTest {
         verify(context);
         verify(producer);
     }
+
+    /**
+     * Проверяем, сгенерируется ли исключение при попытке передать методу строку равную null
+     * */
+    @Test
+    public  void testCityIsNull() throws RuntimeException{
+        sendService.send(nullCity);
+    }
+
+    /**
+     * Проверяем, сгенерируется ли исключение при попытке передать методу пустую строку
+     * */
+    @Test
+    public void testCityIsEmpty() throws RuntimeException{
+        sendService.send(emptyCity);
+    }
+
+
+
+
+
+
 }
