@@ -25,7 +25,6 @@ public class JsonServiceImplements implements JsonService {
 
     @Override
     public <T extends JsonModel> T readJsonMessage(String json, Class<T> modelClass) {
-
         byte[] array = json.getBytes();
         try (InputStream inputStream = new ByteArrayInputStream(array)) {
             ObjectMapper mapper = new ObjectMapper();

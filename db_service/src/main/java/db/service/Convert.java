@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class Convert {
+class Convert {
     private static final String DATE_PATTERN = "dd MMM yyyy";
 
     @Inject

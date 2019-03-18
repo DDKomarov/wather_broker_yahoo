@@ -2,6 +2,7 @@ package db.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
@@ -19,8 +20,9 @@ public class DataReceiver implements MessageListener {
     private final Logger log = LoggerFactory.getLogger(DataReceiver.class);
     private DataService service;
 
+
     @Inject
-    public DataReceiver(DataService service) {
+    public void setService(DataService service) {
         this.service = service;
     }
 
@@ -29,16 +31,15 @@ public class DataReceiver implements MessageListener {
 
     @Override
     public void onMessage(Message message) {
-        String json = "";
+        if (message == null) {
+            throw new RuntimeException("message is null");
+        }
         try {
-            json = ((TextMessage) message).getText();
+            String json = ((TextMessage) message).getText();
             service.save(json);
             log.info("Received message: {}", json);
         } catch (JMSException e) {
-            throw new RuntimeException(
-                    String.format("An error occurred while reading jms message containing json: %s", json),
-                    e
-            );
+            throw new RuntimeException("An error occurred while reading jms message containing json",e);
         }
     }
 }

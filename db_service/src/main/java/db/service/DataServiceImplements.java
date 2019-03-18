@@ -20,12 +20,21 @@ public class DataServiceImplements implements DataService {
     private Convert convert;
     private static final String DATE_PATTERN = "dd MMM yyyy";
 
+    @Inject
+    public void setDao(WeatherDao dao) {
+        this.dao = dao;
+    }
 
     @Inject
-    public DataServiceImplements(WeatherDao dao, Convert convert) {
-        this.dao = dao;
+    public void setConvert(Convert convert) {
         this.convert = convert;
     }
+
+    //    @Inject
+//    public DataServiceImplements(WeatherDao dao, Convert convert) {
+//        this.dao = dao;
+//        this.convert = convert;
+//    }
 
     @Override
     @Transactional

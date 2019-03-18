@@ -51,6 +51,6 @@ public class SendServiceImplements implements SendService {
         } catch (JMSException e) {
             throw new RuntimeException("Not connection" , e );
         }
-        log.info("Message to send: {}" + city);
+        log.info("Message to send: {}" , city);
     }
 }

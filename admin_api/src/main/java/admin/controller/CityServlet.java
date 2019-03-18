@@ -17,7 +17,7 @@ public class CityServlet extends HttpServlet {
     private SendService sendService;
 
     @Inject
-    public CityServlet(SendService sendService) {
+    public void setSendService(SendService sendService) {
         this.sendService = sendService;
     }
 
