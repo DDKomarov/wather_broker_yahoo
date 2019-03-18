@@ -13,9 +13,7 @@
     <bookmark url="file://$PROJECT_DIR$/admin_api/src/test/java/admin/SendServiceImplementsTest.java" line="88" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d38cdd48-7d41-42d9-a21d-edfb13aaf2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="d38cdd48-7d41-42d9-a21d-edfb13aaf2fa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/admin_api/target/" />
@@ -64,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="459">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -458,7 +456,7 @@
       <workItem from="1552475004017" duration="199000" />
       <workItem from="1552571715872" duration="1340000" />
       <workItem from="1552893872656" duration="3968000" />
-      <workItem from="1552898173249" duration="679000" />
+      <workItem from="1552898173249" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="add yahoo_weather">
       <created>1551187082907</created>
@@ -471,7 +469,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120402000" />
+    <option name="totallyTimeSpent" value="121062000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -999,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="459">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
         </state>
       </provider>
     </entry>
