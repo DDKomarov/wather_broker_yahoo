@@ -4,6 +4,7 @@
 #
 target/
 uploads/
+out/
 build/
 .gradle/
 gradle-app.setting
