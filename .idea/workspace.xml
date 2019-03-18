@@ -14,14 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d38cdd48-7d41-42d9-a21d-edfb13aaf2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/src/main/java/admin/controller/CityServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/src/main/java/admin/controller/CityServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_api/src/main/java/admin/service/SendServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin_api/src/main/java/admin/service/SendServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/db/service/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/db/service/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/db_service/src/main/java/db/service/DataServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message_service/src/main/java/message_service/service/JsonServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/message_service/src/main/java/message_service/service/JsonServiceImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,13 +62,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yahoo_weather/src/main/java/yahoo/view/package-info.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -112,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin_api/src/main/java/controller/CityServlet.java" />
         <option value="$PROJECT_DIR$/db_service/src/main/java/dao/WeatherDao.java" />
         <option value="$PROJECT_DIR$/yahoo_weather/src/main/java/service/WeatherForecastServiceImplements.java" />
         <option value="$PROJECT_DIR$/admin_api/src/main/java/service/SendServiceImplements.java" />
@@ -163,6 +152,7 @@
         <option value="$PROJECT_DIR$/weather_service/src/main/java/weather_service/view/package-info.java" />
         <option value="$PROJECT_DIR$/yahoo_weather/src/main/java/yahoo/service/package-info.java" />
         <option value="$PROJECT_DIR$/yahoo_weather/src/main/java/yahoo/view/package-info.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -211,17 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="weatherbroker" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="admin_api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -230,145 +209,16 @@
               <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
               <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
             <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather_service" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherbroker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherbroker" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo_weather" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yahoo" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="weatherbroker" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="admin_api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -608,6 +458,7 @@
       <workItem from="1552475004017" duration="199000" />
       <workItem from="1552571715872" duration="1340000" />
       <workItem from="1552893872656" duration="3968000" />
+      <workItem from="1552898173249" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="add yahoo_weather">
       <created>1551187082907</created>
@@ -620,7 +471,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119723000" />
+    <option name="totallyTimeSpent" value="120402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,9 +567,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add yahoo_weather" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weather_service/src/main/webapp/WEB-INF/view/resp.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather_service/src/main/webapp/WEB-INF/view/req.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1146,6 +994,13 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
