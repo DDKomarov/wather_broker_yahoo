@@ -34,17 +34,15 @@ public class YahooReceiver implements MessageListener {
 
     @Override
     public void onMessage(Message message) {
-
-        String city = "";
+        if (message == null) {
+            throw new RuntimeException("message is null");
+        }
         try {
-            city = ((TextMessage) message).getText();
+            String city = ((TextMessage) message).getText();
             service.createAndSendMessage(city);
-            log.info("Received message: {}", city);
+            log.debug("Received message: {}", city);
         } catch (JMSException  e) {
-            throw new RuntimeException(
-                    String.format("An error occurred while reading jms message containing city: %s", city),
-                    e
-            );
+            throw new RuntimeException("An error occurred while reading jms message containing city:", e);
         }
     }
 }

@@ -37,7 +37,7 @@ public class DataReceiver implements MessageListener {
         try {
             String json = ((TextMessage) message).getText();
             service.save(json);
-            log.info("Received message: {}", json);
+            log.debug("Received message: {}", json);
         } catch (JMSException e) {
             throw new RuntimeException("An error occurred while reading jms message containing json",e);
         }
